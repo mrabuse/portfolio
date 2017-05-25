@@ -3,20 +3,33 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-  entry: path.join(__dirname, 'client/index.js'),
+  entry: ['babel-polyfill', './client/index.js'],
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: 'index.bundle.js',
+    path: path.resolve('dist'),
+    filename: 'bundle.js',
   },
   module: {
-    rules: [
+    loaders: [
       {
         test: /\.(js|jsx)$/,
-        use: 'babel-loader' },
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015', 'react'],
+        },
+      },
     ],
   },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin(),
-    new HtmlWebpackPlugin({ template: './client/index.html' }),
+    new HtmlWebpackPlugin({
+      template: `${__dirname}/client/index.html`,
+      filename: 'index.html',
+      inject: 'body',
+    }),
+    new webpack.NoEmitOnErrorsPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
   ],
 };

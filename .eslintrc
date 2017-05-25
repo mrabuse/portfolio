@@ -1,6 +1,15 @@
 {
   "extends": "airbnb",
+  "plugins": [
+    "markdown",
+    "html",
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+  },
   "rules": {
-    "func-names": ["error", "never"]
-    }
+    "jsx-a11y/img-has-alt": 0,
+    "no-unused-vars": [1, { "argsIgnorePattern": "res|next|^err" }],
+  },
 }
