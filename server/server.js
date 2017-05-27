@@ -4,6 +4,12 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const path = require('path');
 const react = require('react');
+const webpack = require('webpack');
+const webpackConfig = require('../webpack.config');
+const webpackDev = require('webpack-dev-middleware');
+const webpackHot = require('webpack-hot-middleware');
+
+const compiler = webpack(webpackConfig);
 
 // run express server
 const app = express();
@@ -13,8 +19,18 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(morgan('dev'));
 
+// enable hot-reload
+app.use(webpackDev(compiler, {
+  noInfo: true,
+  publicPath: webpackConfig.output.publicPath,
+}));
+
+app.use(webpackHot(compiler, {
+  log: false,
+  reload: true,
+}));
+
 // serve static files
-// app.use('/public', express.static(path.join(__dirname, '/../client/')));
 app.use(express.static(path.join(__dirname, '/../dist/')));
 
 app.listen(8000, () => {

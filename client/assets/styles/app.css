@@ -1,0 +1,66 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+#icon {
+  float: right;
+  padding: 10px;
+}
+
+body {
+  background-color: #fff;
+  margin-bottom: 50px;
+}
+
+#title {
+  padding: 28px 28px 28px 35px;
+  width: 150px;
+}
+
+#header {
+  height: 150px;
+  background-color: #FFD000;
+}
+
+#footer {
+  position:fixed;
+  background-color: black;
+  color: white;
+  height: 50px;
+  bottom: 0px;
+  left:0px;
+  right:0px;
+}
+
+a {
+  padding: 10px;
+  color: #9B7F00;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color:white;
+}
+
+.landing {
+  background-color: #4c8b2b;
+  border-radius: 5px;
+  color: #d4e88b;
+  float: center;
+  height: 300px;
+  width: 500px;
+  margin-left: 30px;
+}
+
+p {
+  padding: 20px;
+}
+
+button {
+  float: left;
+}
+
+/* dark green: #4c8b2b */
+/* light green: #d4e88b */

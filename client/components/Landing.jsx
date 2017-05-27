@@ -1,9 +1,11 @@
 import React from 'react';
 
 const Landing = () => (
-  <div>
+  <div className="landing">
     <p>
-      Wow what a landing.
+      Wow what a landing. Never seen this much landing.
+      So wow. so landing.
+      WOW.
     </p>
   </div>
 );

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Pavanam|Yesteryear');
+
+body {
+  font-family: 'Pavanam', sans-serif;
+  font-size: 25px;
+  color: #38300a;
+}
+
+#title {
+  font-family: 'Yesteryear', cursive;
+  font-size: 70px;
+}
