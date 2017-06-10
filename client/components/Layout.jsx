@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
 import PropTypes from 'prop-types';
+import 'bootstrap/dist/css/bootstrap.css';
 
+// import components
 import Header from './Header';
 import Footer from './Footer';
 
@@ -22,10 +24,10 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <div className="layout">
+      <div className="site">
         <Header />
         <br />
-        <div>
+        <div className="site-content">
           {this.props.children}
         </div>
         <Footer />

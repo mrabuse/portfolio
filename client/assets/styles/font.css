@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Nickainley-Normal';
+  src: url('fonts/Nickainley-Normal.eot');
+  src: url('fonts/Nickainley-Normal.woff2') format('woff2'),
+       url('fonts/Nickainley-Normal.woff') format('woff'),
+       url('fonts/Nickainley-Normal.ttf') format('truetype'),
+       url('fonts/Nickainley-Normal.svg#Nickainley-Normal') format('svg'),
+       url('fonts/Nickainley-Normal.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

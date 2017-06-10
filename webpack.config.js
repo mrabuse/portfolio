@@ -21,15 +21,7 @@ module.exports = {
         },
       },
       {
-        test: /(\.js|\.jsx)$/,
-        loader: 'babel-loader',
-        include: [path.resolve(__dirname, './node_modules/react-icons/fa')],
-        query: {
-          presets: ['es2015', 'react'],
-        },
-      },
-      {
-        test: /\.(jpg|png|svg)$/,
+        test: /\.(pdf|jpg|png|svg|gif)$/,
         loader: 'url-loader',
         options: {
           limit: 25000,
@@ -42,6 +34,18 @@ module.exports = {
           fallback: 'style-loader',
           use: 'css-loader',
         }),
+      },
+      // {
+      //   test: /\.css$/,
+      //   include: `${__dirname}/node_modules/bootstrap/dist/css/`,
+      //   use: ExtractTextPlugin.extract({
+      //     fallback: 'style-loader',
+      //     use: 'css-loader',
+      //   }),
+      // },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        loader: 'url-loader',
       },
     ],
   },

@@ -33,6 +33,10 @@ app.use(webpackHot(compiler, {
 // serve static files
 app.use(express.static(path.join(__dirname, '/../dist/')));
 
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '/../dist/', 'index.html'));
+});
+
 app.listen(8000, () => {
   console.log('Listening on port 8000');
 });

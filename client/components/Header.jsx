@@ -1,30 +1,23 @@
 import React from 'react';
-import Flexbox from 'flexbox-react';
 import { Link } from 'react-router-dom';
 
-// import assets
-import FaGithubAlt from 'react-icons/fa/github-alt';
-import FaLinkedinSquare from 'react-icons/fa/linkedin-square';
-
 const Header = () => (
-  <Flexbox element="header" id="header">
-    <Flexbox className="content" >
-      <Flexbox flexGrow={1} id="title">Megan Rabuse</Flexbox>
-      <Flexbox flexGrow={1} >
-        <Link to="/about">About</Link>
-        <Link to="/work">Work</Link>
-        <Link to="/resume">Resume</Link>
-      </Flexbox>
-      <Flexbox flexGrow={1} id="icon">
-        <a href="https://www.linkedin.com/in/megan-rabuse/">
-          <FaLinkedinSquare className="icon" />
-        </a>
-        <a href="https://github.com/mrabuse">
-          <FaGithubAlt className="icon" />
-        </a>
-      </Flexbox>
-    </Flexbox>
-  </Flexbox>
+  <div className="container-fluid" id="header">
+    <div className="row">
+      <div className="col-xs-8 col-xs-offset-2 nav-contain">
+        <Link to="/" id="title">Megan Rabuse</Link>
+        <p id="subtitle">software engineer</p>
+      </div>
+    </div>
+    <br />
+    <div className="row">
+      <div className="col-xs-12 col-md-8 col-md-offset-2 nav-contain" >
+        <Link className="nav col-xs-4 col-md-4" to="/about">ABOUT</Link>
+        <Link className="nav col-xs-4 col-md-4" to="/work">WORK</Link>
+        <Link className="nav col-xs-4 col-md-4" to="/contact">CONTACT</Link>
+      </div>
+    </div>
+  </div>
 );
 
 Header.propTypes = {}.isRequired;

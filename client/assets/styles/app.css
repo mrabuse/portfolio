@@ -1,65 +1,106 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
 @import url("reset.css");
 @import url("fonts.css");
+@import url("images.css");]
+
+
+body {
+  background-color: #fffae5;
+  margin: 0 0 10em;
+}
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}
 
 #icon {
   float: right;
-  padding: 10px;
 }
 
-body {
-  background-color: #fff;
-  margin-bottom: 50px;
+
+.nav-contain {
+  text-align: center;
+}
+
+.nav {
+  padding: .5em;
 }
 
 #title {
-  padding: 28px 28px 28px 35px;
-  width: 150px;
+  width: 30%;
+}
+
+#subtitle {
+  padding-top: .75em;
 }
 
 #header {
-  height: 150px;
+  padding-top: .5em;
+  width: 100%;
+  height: 10%;
   background-color: #FFD000;
+  flex: none;
 }
 
 #footer {
-  position:fixed;
-  background-color: black;
-  color: white;
-  height: 50px;
-  bottom: 0px;
-  left:0px;
-  right:0px;
+  width: 100%;
+  background-color: #FFD000;
+  flex: none;
 }
 
-a {
-  padding: 10px;
-  color: #9B7F00;
+/*@media all and (min-width: 45em) {
+  #footer {
+    bottom: 0%;
+    height: 17%;
+  }
+}*/
+
+#credit {
+  text-align: center;
 }
 
-a:hover {
-  color: white;
-}
-
-a:active {
-  color:white;
-}
+/*@media all and (min-width: 70em) {
+  #credit {
+    text-align:left;
+  }
+}*/
 
 .landing {
-  background-color: #4c8b2b;
-  border-radius: 5px;
-  color: #d4e88b;
+  border-radius: .5em;
   float: center;
-  height: 300px;
-  width: 500px;
-  margin-left: 30px;
+  height: 25%;
+  width: auto;
+  margin: 1em;
+}
+
+#hi {
+  padding:.5em;
 }
 
 p {
-  padding: 20px;
+  padding: 1em;
 }
 
 button {
   float: left;
+}
+
+.badge {
+  margin: .25em;
+  padding: .5em;
+  background-color: #ebc000;
+  border: .2em solid #ebc000;
+  border-radius: 2em;
+}
+
+h3 {
+  padding: .5em;
 }
 
 /* dark green: #4c8b2b */

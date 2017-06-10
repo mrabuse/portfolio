@@ -1,10 +1,9 @@
 import React from 'react';
-import Flexbox from 'flexbox-react';
 
 const NotFound = () => (
-  <Flexbox>
+  <div>
     <p>That is totes not a thing that exists, dude!</p>
-  </Flexbox>
+  </div>
 );
 
 export default NotFound;

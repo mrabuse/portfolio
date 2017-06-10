@@ -46,3 +46,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+a, a:link, a:hover, a:active, a:visited, a:before {
+  text-decoration: none;
+  color: white;
+}
