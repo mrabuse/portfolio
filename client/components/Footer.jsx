@@ -6,18 +6,21 @@ import Resume from '../assets/styles/Megan Rabuse Resume.pdf';
 
 const Footer = () => (
   <div className="container-fluid" id="footer">
-    <div className="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-4 row nav-contain">
+    <div className="col-xs-12 col-md-4 col-md-offset-4 nav-contain">
       <a className="col-xs-4 nav" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/megan-rabuse">
-        <i className="fa fa-2x fa-linkedin-square" aria-hidden="true" />
+        <i className="fa fa-2x fa-linkedin-square" aria-hidden="true" /><br />
+        <span>LinkedIn</span>
       </a>
       <a className="col-xs-4 nav" target="_blank" rel="noopener noreferrer" href="http://github.com/mrabuse">
-        <i className="fa fa-2x fa-github-alt" aria-hidden="true" />
+        <i className="fa fa-2x fa-github-alt" aria-hidden="true" /><br />
+        <span>Github</span>
       </a>
       <a className="col-xs-4 nav" target="_blank" rel="noopener noreferrer" href={Resume}>
-        <i className="fa fa-2x fa-file-text" aria-hidden="true" />
+        <i className="fa fa-2x fa-file-text" aria-hidden="true" /><br />
+        <span>Resume</span>
       </a>
     </div>
-    <p className="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 row" id="credit">
+    <p className="col-xs-12 col-md-8 col-md-offset-2" id="credit">
       Megan Rabuse © 2017
     </p>
   </div>

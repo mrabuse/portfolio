@@ -4,8 +4,8 @@ const Contact = () => (
   <div className="container-fluid">
     <div className="col-xs-12 col-md-8 col-md-offset-2 nav-contain">
       <h3 className="fancy">Want to get in touch?</h3>
-      <p>Reach out to me!</p>
-      <p>Email:
+      <p className="reach-out">Reach out to me!</p>
+      <p>Email <br />
         <a
           className="main"
           target="_blank"
@@ -14,7 +14,7 @@ const Contact = () => (
         > megan.m.rabuse@gmail.com
         </a>
       </p>
-      <p>Github:
+      <p>Github <br />
         <a
           className="main"
           target="_blank"
@@ -23,7 +23,7 @@ const Contact = () => (
         > mrabuse
         </a>
       </p>
-      <p>LinkedIn:
+      <p>LinkedIn <br />
         <a
           className="main"
           target="_blank"

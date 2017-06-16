@@ -1,17 +1,18 @@
 import React from 'react';
 
 const App = props => (
-  <div className="col-sm-6 col-md-4" >
+  <div className="col-xs-12 col-md-6 col-md-offset-0" >
     <h3 className="app-name">{props.app.title}</h3>
-    <a href={props.app.link}>
+    <a href={props.app.link} target="_blank" rel="noopener noreferrer" >
       <img className="app" src={`/images/${props.app.image}.png`} />
     </a>
-    <div className="caption">
-      <p>{props.app.snippet}</p>
+    <div>
+      <p className="caption" >{props.app.snippet}</p>
       <div>
         {props.app.techs.map(tech => <span className="badge">{tech}</span>) }
       </div>
     </div>
+    <br />
   </div>
 );
 

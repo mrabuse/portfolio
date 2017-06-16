@@ -30,6 +30,7 @@ class Layout extends React.Component {
         <div className="site-content">
           {this.props.children}
         </div>
+        <br />
         <Footer />
       </div>
     );

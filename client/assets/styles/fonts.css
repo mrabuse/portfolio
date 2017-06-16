@@ -4,45 +4,38 @@
 body {
   font-family: 'Karla', sans-serif;
   font-size: 120%;
+  line-height: 145%;
   color: #38300a;
 }
 
-h3 {
+.fancy, .app-name {
   text-align: center;
   font-family: 'Nickainley-Normal', cursive;
+  font-size: 2.5em;
+  line-height: 120%;
+  padding: .5em;
+}
+
+.app-name {
+  text-align: center;
   font-size: 2em;
 }
 
-.center {
-  text-align: center;
-}
-
-.fancy {
-  font-family: 'Nickainley-Normal', cursive;
-  font-size: 2em;
-}
-
-.nav {
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1em;
-  color: #9B7F00;
+#hi {
+  text-align: left;
 }
 
 #title {
   text-align: center;
   font-family: 'Nickainley-Normal', cursive;
   font-size: 4em;
+  line-height: 100%;
   color: #38300a;
 }
 
 #subtitle {
+  text-align: center;
   color: #38300a;
-}
-
-#hi {
-  font-family: 'Nickainley-Normal', cursive;
-  font-size: 2em;
 }
 
 #footer {
@@ -50,40 +43,48 @@ h3 {
 }
 
 .badge {
-  color: white;
+  color: #38300a;
   font-size: .75em;
 }
 
-.app-name {
-  font-family: 'Nickainley-Normal', cursive;
-  font-size:2em;
-  padding: .5em;
-}
-
-a.nav:hover {
+.nav {
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
   color: #9B7F00;
 }
 
-a.nav:active {
-  color: #9B7F00;
-}
-
-a.nav:focus {
+a.nav:hover, a.nav:active, a.nav:focus {
   color: #9B7F00;
 }
 
 a.main {
-  color: #a5a5a5;
+  /*color: #a5a5a5;*/
+  color: #9d9d9d;
 }
 
-a.main:hover {
-  color: #daa520;
+a.main:hover, a.main:active, a.main:focus {
+  color: #ffd602;
 }
 
-a.main:active {
-  color: #daa520;
+#skills {
+  padding-bottom: 0;
+  font-size: 2em;
 }
 
-a.main:focus {
-  color: #daa520;
+.skill {
+  font-weight: 900;
+  font-size: 1.25em;
+  padding: .75em;
+  padding-bottom: 0;
+}
+
+.caption {
+  text-align: justify;
+  hyphens: auto;
+}
+
+.reach-out {
+  font-size: 1.25em;
 }

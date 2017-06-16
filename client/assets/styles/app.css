@@ -6,7 +6,6 @@
 
 body {
   background-color: #fffae5;
-  margin: 0 0 10em;
 }
 
 .site {
@@ -17,6 +16,10 @@ body {
 
 .site-content {
   flex: 1;
+}
+
+.container-fluid {
+  padding: 0;
 }
 
 #icon {
@@ -76,7 +79,7 @@ body {
   float: center;
   height: 25%;
   width: auto;
-  margin: 1em;
+  /*margin: 1em;*/
 }
 
 #hi {
@@ -94,7 +97,7 @@ button {
 .badge {
   margin: .25em;
   padding: .5em;
-  background-color: #ebc000;
+  background-color: #fed500;
   border: .2em solid #ebc000;
   border-radius: 2em;
 }
