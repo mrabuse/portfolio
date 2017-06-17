@@ -15,10 +15,9 @@ const About = () => (
           intuitive interfaces and building clean, structured back-ends. </p>
         <p className={pWidth}> As an engineer, I love taking complex data and
           transforming it into useful, intuitive, and pleasing experiences for users.
-          I believe using websites should be a fun and effortless experience.
+          I believe using a website should be a fun and effortless experience.
           I have experience setting up servers, designing SQL and NoSQL databases,
           and architecting web applications from the ground up. </p>
-        <p className={pWidth}> </p>
         <p className={pWidth}>When I&rsquo;m not coding, you can find me playing
           board games, beating any
           escape room in town, or getting my bard on with Sh*t-Faced Shakespeare.</p>
