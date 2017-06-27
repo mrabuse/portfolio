@@ -9,7 +9,8 @@ const Landing = () => (
         I&rsquo;m Megan and I&rsquo;m a software engineer specializing in
         full-stack JavaScript web development. I hail from the great Austin, Texas.
       </p>
-      <p>What I do? Check out some of my <Link to="/work" className="main">recent work</Link>.</p>
+      <p>What do I do? Check out some of my <Link to="/work" className="main">
+      recent work</Link>.</p>
       <p>Looking to add to your team?
        <Link to="/contact" className="main"> Drop me a line</Link>!</p>
       <br />
