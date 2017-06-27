@@ -4,8 +4,9 @@
   "description": "Megan Rabuse's personal website",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --watch --hot --progress --colors & nodemon server/server.js",
-    "build": "webpack --progress --colors --display-error-details"
+    "start": "export NODE_ENV=production & nodemon server/server.js",
+    "dev:client": "webpack --watch --hot --progress --colors & nodemon server/server.js",
+    "build": "webpack -p --progress --colors"
   },
   "author": "Megan Rabuse",
   "license": "ISC",
