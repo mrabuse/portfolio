@@ -3,12 +3,13 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const path = require('path');
-
-// webpack dependencies
+const react = require('react');
 const webpack = require('webpack');
-const webpackConfig = require('../webpack.dev.config');
+const webpackConfig = require('../webpack.config');
 const webpackDev = require('webpack-dev-middleware');
 const webpackHot = require('webpack-hot-middleware');
+
+// const compiler = webpack(webpackConfig);
 
 // run express server
 const app = express();
@@ -19,15 +20,15 @@ app.use(bodyParser.json());
 app.use(morgan('dev'));
 
 // enable hot-reload
-if (process.env.NODE_ENV !== 'production') {
-  const compiler = webpack(webpackConfig);
-
-  app.use(webpackDev(compiler, {
-    noInfo: true,
-    publicPath: webpackConfig.output.publicPath,
-  }));
-  app.use(webpackHot(compiler));
-}
+// app.use(webpackDev(compiler, {
+//   noInfo: true,
+//   publicPath: webpackConfig.output.publicPath,
+// }));
+//
+// app.use(webpackHot(compiler, {
+//   log: false,
+//   reload: true,
+// }));
 
 // serve static files
 app.use(express.static(path.join(__dirname, '/../dist/')));

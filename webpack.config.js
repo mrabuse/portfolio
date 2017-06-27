@@ -35,6 +35,14 @@ module.exports = {
           use: 'css-loader',
         }),
       },
+      // {
+      //   test: /\.css$/,
+      //   include: `${__dirname}/node_modules/bootstrap/dist/css/`,
+      //   use: ExtractTextPlugin.extract({
+      //     fallback: 'style-loader',
+      //     use: 'css-loader',
+      //   }),
+      // },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
         loader: 'url-loader',
@@ -45,6 +53,7 @@ module.exports = {
     extensions: ['.js', '.jsx'],
   },
   plugins: [
+    // new webpack.optimize.UglifyJsPlugin(),
     new HtmlWebpackPlugin({
       template: `${__dirname}/client/index.html`,
       filename: 'index.html',
