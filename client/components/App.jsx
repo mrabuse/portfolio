@@ -10,7 +10,7 @@ const App = props => (
     <div>
       <p className="caption" >{props.app.snippet}</p>
       <div>
-        {props.app.techs.map(tech => <span className="badge">{tech}</span>) }
+        {props.app.techs.map((tech, i) => <span key={i} className="badge">{tech}</span>) }
       </div>
     </div>
     <br />
