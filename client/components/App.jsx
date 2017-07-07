@@ -25,6 +25,6 @@ App.propTypes = {
     snippet: PropTypes.string,
     techs: PropTypes.arrayOf(PropTypes.string),
   }),
-}.isRequired();
+}.isRequired;
 
 export default App;
