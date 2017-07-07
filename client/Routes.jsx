@@ -10,7 +10,7 @@ import Contact from './components/Contact';
 import NotFound from './components/NotFound';
 
 // import styles
-import './assets/styles/app.css';
+import './assets/app.css';
 
 const Routes = () => (
   <BrowserRouter>
