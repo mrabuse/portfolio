@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import laptop from '../assets/styles/favicons/laptop.svg';
 
 const Landing = () => (
   <div className="container-fluid">
@@ -15,9 +16,8 @@ const Landing = () => (
        <Link to="/contact" className="main"> Drop me a line</Link>!</p>
       <br />
     </div>
+    <img src={laptop} />
   </div>
 );
-
-Landing.propTypes = {}.isRequired;
 
 export default Landing;

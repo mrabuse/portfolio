@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const App = props => (
   <div className="col-xs-12 col-md-6 col-md-offset-0" >
@@ -15,5 +16,15 @@ const App = props => (
     <br />
   </div>
 );
+
+App.propTypes = {
+  app: PropTypes.shape({
+    title: PropTypes.string,
+    link: PropTypes.string,
+    image: PropTypes.string,
+    snippet: PropTypes.string,
+    techs: PropTypes.arrayOf(PropTypes.string),
+  }),
+}.isRequired();
 
 export default App;

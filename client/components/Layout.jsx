@@ -6,19 +6,18 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Header from './Header';
 import Footer from './Footer';
 
+// import favicon images
+import '../assets/styles/favicons/apple-touch-icon.png';
+import '../assets/styles/favicons/favicon-16x16.png';
+import '../assets/styles/favicons/favicon-32x32.png';
+import '../assets/styles/favicons/favicon.ico';
+import '../assets/styles/favicons/manifest.json';
+import '../assets/styles/favicons/safari-pinned-tab.svg';
+
 class Layout extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
-  }
-
-  getChildContext() {
-    return {
-      reactIconBase: {
-        color: '#9B7F00',
-        size: 40,
-      },
-    };
   }
 
   render() {
@@ -37,9 +36,5 @@ class Layout extends React.Component {
 }
 
 Layout.propTypes = {}.isRequired;
-
-Layout.childContextTypes = {
-  reactIconBase: PropTypes.object,
-};
 
 export default Layout;
