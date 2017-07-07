@@ -10,7 +10,9 @@ const App = props => (
     <div>
       <p className="caption" >{props.app.snippet}</p>
       <div>
+        {/*  eslint-disable react/no-array-index-key */}
         {props.app.techs.map((tech, i) => <span key={i} className="badge">{tech}</span>) }
+        {/* eslint-enable react/no-array-index-key */}
       </div>
     </div>
     <br />
