@@ -1,7 +1,7 @@
 import React from 'react';
 
 // import images
-import megan from '../assets/styles/megan.jpg';
+import megan from '../assets/media/megan.jpg';
 
 const pWidth = 'col-xs-12 about';
 

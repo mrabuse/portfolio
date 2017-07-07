@@ -4,11 +4,11 @@ import React from 'react';
 import App from './App';
 
 // import app images
-import '../assets/styles/cardCast.png';
-import '../assets/styles/echoes.png';
-import '../assets/styles/surveyScribe.png';
-import '../assets/styles/balloonCat.png';
-import '../assets/styles/portfolio.png';
+import '../assets/media/cardCast.png';
+import '../assets/media/echoes.png';
+import '../assets/media/surveyScribe.png';
+import '../assets/media/balloonCat.png';
+import '../assets/media/portfolio.png';
 
 // import data;
 import apps from '../applications';

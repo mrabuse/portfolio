@@ -1,8 +1,8 @@
 import React from 'react';
-import '../assets/styles/font-awesome/css/font-awesome.min.css';
+import '../assets/font-awesome/css/font-awesome.min.css';
 
 // import assets
-import Resume from '../assets/styles/Megan Rabuse Resume.pdf';
+import Resume from '../assets/media/Megan Rabuse Resume.pdf';
 
 const Footer = () => (
   <div className="container-fluid" id="footer">

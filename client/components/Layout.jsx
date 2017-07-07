@@ -7,12 +7,12 @@ import Header from './Header';
 import Footer from './Footer';
 
 // import favicon images
-import '../assets/styles/favicons/apple-touch-icon.png';
-import '../assets/styles/favicons/favicon-16x16.png';
-import '../assets/styles/favicons/favicon-32x32.png';
-import '../assets/styles/favicons/favicon.ico';
-import '../assets/styles/favicons/manifest.json';
-import '../assets/styles/favicons/safari-pinned-tab.svg';
+import '../assets/media/favicons/apple-touch-icon.png';
+import '../assets/media/favicons/favicon-16x16.png';
+import '../assets/media/favicons/favicon-32x32.png';
+import '../assets/media/favicons/favicon.ico';
+import '../assets/media/favicons/manifest.json';
+import '../assets/media/favicons/safari-pinned-tab.svg';
 
 class Layout extends React.Component {
   constructor(props) {
