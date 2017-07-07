@@ -53,7 +53,7 @@ class Work extends React.Component {
   render() {
     return (
       <div className="container-fluid nav-contain">
-        <div className="col-xs-12 col-md-8 col-md-offset-2">
+        <div className="col-md-10 col-md-offset-1">
           {createAppRows(apps)}
           <br />
         </div>

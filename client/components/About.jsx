@@ -7,7 +7,7 @@ const pWidth = 'col-xs-12 about';
 
 const About = () => (
   <div className="container-fluid">
-    <div className="col-xs-12 col-md-8 col-md-offset-2">
+    <div className="col-xs-12 col-md-10 col-md-offset-1">
       <div className="col-xs-12 col-md-6">
         <h3 className="fancy">About Me</h3>
         <p className={pWidth}>

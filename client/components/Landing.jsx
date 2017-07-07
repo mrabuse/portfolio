@@ -4,7 +4,7 @@ import laptop from '../assets/media/favicons/laptop.svg';
 
 const Landing = () => (
   <div className="container-fluid">
-    <div className="col-xs-12 col-md-8 col-md-offset-2" >
+    <div className="col-xs-12 col-md-10 col-md-offset-1" >
       <h2 className="fancy" id="hi"> Hi there! </h2>
       <p>
         I&rsquo;m Megan and I&rsquo;m a software engineer specializing in

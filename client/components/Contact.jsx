@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => (
   <div className="container-fluid">
-    <div className="col-xs-12 col-md-8 col-md-offset-2 nav-contain">
+    <div className="col-xs-12 col-md-10 col-md-offset-1 nav-contain">
       <h3 className="fancy">Want to get in touch?</h3>
       <p className="reach-out">Reach out to me!</p>
       <p>Email <br />
