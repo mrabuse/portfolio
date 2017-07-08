@@ -1,11 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family==Karla');
 @import url('nickainley.css');
 
+/*--------------*/
+/* General */
+/*--------------*/
 body {
   font-family: 'Karla', sans-serif;
   font-size: 120%;
   line-height: 145%;
   color: #38300a;
+}
+/*--------------*/
+/* Layout */
+/*--------------*/
+a.main {
+  color: #9d9d9d;
+}
+
+a.main:hover, a.main:active, a.main:focus {
+  color: #ffd602;
 }
 
 .fancy, .app-name {
@@ -15,16 +28,9 @@ body {
   line-height: 120%;
   padding: .5em;
 }
-
-.app-name {
-  text-align: center;
-  font-size: 2em;
-}
-
-#hi {
-  text-align: left;
-}
-
+/*--------------*/
+/* Header */
+/*--------------*/
 #title {
   text-align: center;
   font-family: 'Nickainley-Normal', cursive;
@@ -38,15 +44,6 @@ body {
   color: #38300a;
 }
 
-#footer {
-  color: #38300a;
-}
-
-.badge {
-  color: #38300a;
-  font-size: .75em;
-}
-
 .nav {
   text-align: center;
   text-decoration: none;
@@ -58,21 +55,54 @@ body {
 a.nav:hover, a.nav:active, a.nav:focus {
   color: #9B7F00;
 }
-
-a.main {
-  /*color: #a5a5a5;*/
-  color: #9d9d9d;
+/*--------------*/
+/* Footer */
+/*--------------*/
+#footer {
+  color: #38300a;
 }
-
-a.main:hover, a.main:active, a.main:focus {
-  color: #ffd602;
+/*--------------*/
+/* Landing*/
+/*--------------*/
+#hi {
+  text-align: left;
 }
-
+/*--------------*/
+/* About */
+/*--------------*/
 #skills {
   padding-bottom: 0;
   font-size: 2em;
 }
+/*--------------*/
+/* Contact */
+/*--------------*/
+.reach-out {
+  font-size: 1.25em;
+}
+/*--------------*/
+/* Landing */
+/*--------------*/
 
+/*--------------*/
+/* Not Found */
+/*--------------*/
+
+/*--------------*/
+/* Work */
+/*--------------*/
+
+/*--------------*/
+/* App */
+/*--------------*/
+.app-name {
+  text-align: center;
+  font-size: 2em;
+}
+.badge {
+  color: #38300a;
+  font-size: .75em;
+}
 .skill {
   font-weight: 900;
   font-size: 1.25em;
@@ -83,8 +113,4 @@ a.main:hover, a.main:active, a.main:focus {
 .caption {
   text-align: justify;
   hyphens: auto;
-}
-
-.reach-out {
-  font-size: 1.25em;
 }

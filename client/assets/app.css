@@ -3,11 +3,24 @@
 @import url("fonts.css");
 @import url("images.css");]
 
-
+/*--------------*/
+/* General */
+/*--------------*/
 body {
   background-color: #fffae5;
 }
 
+.container-fluid {
+  padding: 0;
+}
+
+p {
+  padding: 1em;
+}
+
+/*--------------*/
+/* Layout */
+/*--------------*/
 .site {
   display: flex;
   min-height: 100vh;
@@ -18,21 +31,22 @@ body {
   flex: 1;
 }
 
-.container-fluid {
-  padding: 0;
+#footer {
+  width: 100%;
+  background-color: #FFD000;
+  flex: none;
 }
 
-#icon {
-  float: right;
-}
+/*--------------*/
+/* Header */
+/*--------------*/
 
-
-.nav-contain {
-  text-align: center;
-}
-
-.nav {
-  padding: .5em;
+#header {
+  padding-top: .5em;
+  width: 100%;
+  height: 10%;
+  background-color: #FFD000;
+  flex: none;
 }
 
 #title {
@@ -43,57 +57,63 @@ body {
   padding-top: .75em;
 }
 
-#header {
-  padding-top: .5em;
-  width: 100%;
-  height: 10%;
-  background-color: #FFD000;
-  flex: none;
+#icon {
+  float: right;
 }
 
-#footer {
-  width: 100%;
-  background-color: #FFD000;
-  flex: none;
+.nav-contain {
+  text-align: center;
 }
 
-/*@media all and (min-width: 45em) {
-  #footer {
-    bottom: 0%;
-    height: 17%;
-  }
-}*/
+.nav {
+  padding: .5em;
+}
 
 #credit {
   text-align: center;
 }
 
-/*@media all and (min-width: 70em) {
-  #credit {
-    text-align:left;
-  }
-}*/
+/*--------------*/
+/* Footer */
+/*--------------*/
 
+/*--------------*/
+/* Landing*/
+/*--------------*/
 .landing {
   border-radius: .5em;
   float: center;
   height: 25%;
   width: auto;
-  /*margin: 1em;*/
 }
 
 #hi {
   padding:.5em;
 }
 
-p {
-  padding: 1em;
-}
+/*--------------*/
+/* About */
+/*--------------*/
 
-button {
-  float: left;
-}
+/*--------------*/
+/* Contact */
+/*--------------*/
 
+/*--------------*/
+/* Landing */
+/*--------------*/
+
+/*--------------*/
+/* Not Found */
+/*--------------*/
+
+/*--------------*/
+/* Work */
+/*--------------*/
+
+/*--------------*/
+/* App */
+/*--------------*/
 .badge {
   margin: .25em;
   padding: .5em;
@@ -105,6 +125,3 @@ button {
 h3 {
   padding: .5em;
 }
-
-/* dark green: #4c8b2b */
-/* light green: #d4e88b */
