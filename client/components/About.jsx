@@ -23,6 +23,7 @@ const About = () => (
           escape room in town, or getting my bard on with Sh*t-Faced Shakespeare.</p>
       </div>
       <div className="col-xs-12 col-md-6">
+        <br />
         <div className="col-xs-8 col-xs-offset-2">
           <img id="megan" src={megan} />
         </div>

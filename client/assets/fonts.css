@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family==Karla');
+@import url('https://fonts.googleapis.com/css?family=Karla');
 @import url('nickainley.css');
 
 /*--------------*/
@@ -106,8 +106,6 @@ a.nav:hover, a.nav:active, a.nav:focus {
 .skill {
   font-weight: 900;
   font-size: 1.25em;
-  padding: .75em;
-  padding-bottom: 0;
 }
 
 .caption {

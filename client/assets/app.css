@@ -14,8 +14,20 @@ body {
   padding: 0;
 }
 
+h3 {
+  padding: .5em;
+}
+
 p {
   padding: 1em;
+}
+
+.nav-contain {
+  text-align: center;
+}
+
+.nav {
+  padding: .5em;
 }
 
 /*--------------*/
@@ -29,12 +41,6 @@ p {
 
 .site-content {
   flex: 1;
-}
-
-#footer {
-  width: 100%;
-  background-color: #FFD000;
-  flex: none;
 }
 
 /*--------------*/
@@ -61,22 +67,18 @@ p {
   float: right;
 }
 
-.nav-contain {
-  text-align: center;
-}
-
-.nav {
-  padding: .5em;
+/*--------------*/
+/* Footer */
+/*--------------*/
+#footer {
+  width: 100%;
+  background-color: #FFD000;
+  flex: none;
 }
 
 #credit {
   text-align: center;
 }
-
-/*--------------*/
-/* Footer */
-/*--------------*/
-
 /*--------------*/
 /* Landing*/
 /*--------------*/
@@ -122,6 +124,7 @@ p {
   border-radius: 2em;
 }
 
-h3 {
-  padding: .5em;
+.skill {
+  padding: .75em;
+  padding-bottom: 0;
 }
