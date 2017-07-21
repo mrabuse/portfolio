@@ -27,6 +27,7 @@ const About = () => (
         <div className="col-xs-8 col-xs-offset-2">
           <img id="megan" src={megan} />
         </div>
+        <br />
         <div className={pWidth}>
           <h3 className="fancy" id="skills"> Skills</h3>
           <p className="skill">Front-end</p>

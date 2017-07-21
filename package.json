@@ -4,7 +4,7 @@
   "description": "Megan Rabuse's personal website",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --watch --hot --progress --colors & nodemon server/server.js",
+    "start": "webpack --watch --p --colors & nodemon server/server.js --history-api-fallback",
     "build": "webpack --progress --colors --display-error-details"
   },
   "author": "Megan Rabuse",
