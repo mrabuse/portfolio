@@ -6,7 +6,7 @@ const path = require('path');
 const webpack = require('webpack');
 const webpackConfig = require('../webpack.config');
 const webpackDev = require('webpack-dev-middleware');
-const webpackHot = require('webpack-hot-middleware');
+// const webpackHot = require('webpack-hot-middleware');
 
 const compiler = webpack(webpackConfig);
 
@@ -24,10 +24,10 @@ app.use(webpackDev(compiler, {
   publicPath: webpackConfig.output.publicPath,
 }));
 
-app.use(webpackHot(compiler, {
-  log: false,
-  reload: true,
-}));
+// app.use(webpackHot(compiler, {
+//   log: false,
+//   reload: true,
+// }));
 
 // serve static files
 app.use(express.static(path.join(__dirname, '/../dist/')));

@@ -4,7 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-  entry: ['babel-polyfill', './client/index.js', 'webpack-hot-middleware/client'],
+  entry: ['babel-polyfill', './client/index.js'],
   output: {
     path: path.resolve('dist'),
     filename: 'bundle.js',
@@ -53,7 +53,12 @@ module.exports = {
     extensions: ['.js', '.jsx'],
   },
   plugins: [
-    // new webpack.optimize.UglifyJsPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': {
+         NODE_ENV: JSON.stringify('production')
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin(),
     new HtmlWebpackPlugin({
       template: `${__dirname}/client/index.html`,
       filename: 'index.html',
@@ -61,6 +66,5 @@ module.exports = {
     }),
     new ExtractTextPlugin('[name].css'),
     new webpack.NoEmitOnErrorsPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
   ],
 };
