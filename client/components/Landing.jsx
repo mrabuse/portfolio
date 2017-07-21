@@ -7,8 +7,8 @@ const Landing = () => (
     <div className="col-xs-12 col-md-10 col-md-offset-1" >
       <h2 className="fancy" id="hi"> Hi there! </h2>
       <p>
-        I&rsquo;m Megan and I&rsquo;m a software engineer specializing in
-        full-stack JavaScript web development. I hail from the great Austin, Texas.
+        I&rsquo;m Megan and I&rsquo;m a full-stack software engineer specializing in
+        web development. I hail from the great Austin, Texas.
       </p>
       <p>What do I do? Check out some of my <Link to="/work" className="main">
       recent work</Link>.</p>
