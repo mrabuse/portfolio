@@ -16,7 +16,6 @@ const Landing = () => (
        <Link to="/contact" className="main"> Drop me a line</Link>!</p>
       <br />
     </div>
-    <img src={laptop} />
   </div>
 );
 
