@@ -33,7 +33,7 @@ app.use(webpackDev(compiler, {
 // serve static files
 app.use(express.static(path.join(__dirname, '/../dist/')));
 app.use(fallback(path.join(__dirname, '/../dist/', 'index.html')));
-app.get('*', (req, res) => {
+app.use('*', (req, res) => {
   res.sendFile('./dist/index.html');
 });
 
