@@ -32,13 +32,13 @@ app.use(webpackDev(compiler, {
 // serve static files
 app.use(express.static(path.join(__dirname, '/../dist/')));
 app.get('/', (req, res) => {
-  res.sendFile('../dist/index.html');
+  res.sendFile(path.join(__dirname, '/../dist/index.html'));
 })
 app.get('/work', (req, res) => {
-  res.sendFile('../dist/index.html');
+  res.sendFile(path.join(__dirname, '/../dist/index.html'));
 })
 app.use('*', (req, res) => {
-  res.sendFile('../dist/index.html');
+  res.sendFile(path.join(__dirname, '/../dist/index.html'));
 });
 
 app.listen(8000, (error) => {

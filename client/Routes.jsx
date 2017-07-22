@@ -11,6 +11,8 @@ import NotFound from './components/NotFound';
 
 // import styles
 import './assets/app.css';
+// import favicons
+import './assets/favicons/favicons';
 
 const Routes = () => (
   <BrowserRouter>

@@ -35,14 +35,6 @@ module.exports = {
           use: 'css-loader',
         }),
       },
-      // {
-      //   test: /\.css$/,
-      //   include: `${__dirname}/node_modules/bootstrap/dist/css/`,
-      //   use: ExtractTextPlugin.extract({
-      //     fallback: 'style-loader',
-      //     use: 'css-loader',
-      //   }),
-      // },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
         loader: 'url-loader',
@@ -52,13 +44,36 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
+  devServer: {
+    historyApiFallback: true,
+    proxy: {
+      '/': {
+        target: {
+          host: 'localhost',
+          protocol: 'http',
+          port: 8000,
+        },
+        secure: false,
+      }
+    }
+  },
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
          NODE_ENV: JSON.stringify('production')
       }
     }),
-    new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      beautify: false,
+      mangle: {
+        screw_ie8: true,
+        keep_fnames: true
+      },
+      compress: {
+        screw_ie8: true
+      },
+      comments: false,
+    }),
     new HtmlWebpackPlugin({
       template: `${__dirname}/client/index.html`,
       filename: 'index.html',

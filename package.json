@@ -4,7 +4,7 @@
   "description": "Megan Rabuse's personal website",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --watch --p --colors & nodemon server/server.js --history-api-fallback",
+    "start": "webpack --watch --p --colors & nodemon server/server.js",
     "build": "webpack --progress --colors --display-error-details"
   },
   "author": "Megan Rabuse",
@@ -27,6 +27,7 @@
     "react-tap-event-plugin": "^2.0.1",
     "webpack": "^2.6.1",
     "webpack-dev-middleware": "^1.10.2",
+    "webpack-dev-server": "^2.6.0",
     "webpack-hot-middleware": "^2.18.0"
   },
   "devDependencies": {
