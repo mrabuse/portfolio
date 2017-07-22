@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import laptop from '../assets/media/favicons/laptop.svg';
 
 const Landing = () => (
   <div className="container-fluid">
