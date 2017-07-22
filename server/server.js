@@ -34,7 +34,7 @@ app.use(webpackDev(compiler, {
 app.use(express.static(path.join(__dirname, '/../dist/')));
 app.use(fallback(path.join(__dirname, '/../dist/', 'index.html')));
 app.get('*', (req, res) => {
-  res.sendFile('dist/index.html');
+  res.sendFile('./dist/index.html');
 });
 
 app.listen(8000, (error) => {
