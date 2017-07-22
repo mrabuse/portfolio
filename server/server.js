@@ -3,7 +3,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const path = require('path');
-const fallback = require('express-history-api-fallback');
 const webpack = require('webpack');
 const webpackConfig = require('../webpack.config');
 const webpackDev = require('webpack-dev-middleware');
@@ -32,9 +31,14 @@ app.use(webpackDev(compiler, {
 
 // serve static files
 app.use(express.static(path.join(__dirname, '/../dist/')));
-app.use(fallback(path.join(__dirname, '/../dist/', 'index.html')));
+app.get('/', (req, res) => {
+  res.sendFile('../dist/index.html');
+})
+app.get('/work', (req, res) => {
+  res.sendFile('../dist/index.html');
+})
 app.use('*', (req, res) => {
-  res.sendFile('./dist/index.html');
+  res.sendFile('../dist/index.html');
 });
 
 app.listen(8000, (error) => {
