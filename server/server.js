@@ -5,7 +5,7 @@ const morgan = require('morgan');
 const path = require('path');
 const webpack = require('webpack');
 const webpackConfig = require('../webpack.config');
-const webpackDev = require('webpack-dev-middleware');
+// const webpackDev = require('webpack-dev-middleware');
 // const webpackHot = require('webpack-hot-middleware');
 
 const compiler = webpack(webpackConfig);
@@ -19,10 +19,10 @@ app.use(bodyParser.json());
 app.use(morgan('dev'));
 
 // enable hot-reload
-app.use(webpackDev(compiler, {
-  noInfo: true,
-  publicPath: webpackConfig.output.publicPath,
-}));
+// app.use(webpackDev(compiler, {
+//   noInfo: true,
+//   publicPath: webpackConfig.output.publicPath,
+// }));
 
 // app.use(webpackHot(compiler, {
 //   log: false,
@@ -31,12 +31,6 @@ app.use(webpackDev(compiler, {
 
 // serve static files
 app.use(express.static(path.join(__dirname, '/../dist/')));
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '/../dist/index.html'));
-})
-app.get('/work', (req, res) => {
-  res.sendFile(path.join(__dirname, '/../dist/index.html'));
-})
 app.use('*', (req, res) => {
   res.sendFile(path.join(__dirname, '/../dist/index.html'));
 });
