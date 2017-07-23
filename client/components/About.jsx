@@ -11,7 +11,7 @@ const About = () => (
       <div className="col-xs-12 col-md-6">
         <h3 className="fancy">About Me</h3>
         <p className={pWidth}>
-          I&rsquo;m a full stack web developer who loves creating well designed,
+          I&rsquo;m a full stack software engineer who loves creating well designed,
           intuitive interfaces and building clean, structured back-ends. </p>
         <p className={pWidth}> As an engineer, I love taking complex data and
           transforming it into useful, intuitive, and pleasing experiences for users.
