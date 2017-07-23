@@ -31,7 +31,7 @@ app.use(morgan('dev'));
 
 // serve static files
 app.use(express.static(path.join(__dirname, '/../dist/')));
-app.use('*', (req, res) => {
+app.use('/*', (req, res) => {
   res.sendFile(path.join(__dirname, '/../dist/index.html'));
 });
 
